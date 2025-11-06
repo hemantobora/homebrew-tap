@@ -41,9 +41,8 @@ brew upgrade
 Go-based CLI to generate, deploy, and manage mock-server infrastructures (MockServer) in the cloud.
 
 Key features:
-- Provisions AWS ECS + ALB + S3 via Terraform  
-- YAML-driven request/response mappings  
-- TTL-based auto-teardown and persistence  
+- Provisions AWS infrastructure. Azure and GCP Planned  
+- YAML-driven request/response mappings   
 - AI-assisted stub generation via MCP  
 
 **Install:**
