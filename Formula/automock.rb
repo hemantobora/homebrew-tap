@@ -11,7 +11,7 @@ class Automock < Formula
   on_macos do
     on_intel do
       url "https://github.com/hemantobora/auto-mock/releases/download/v1.0.3/automock_1.0.3_darwin_amd64.tar.gz"
-      sha256 "dce6db2cc61b0352579ec9aa4f83d98e95be55c3ed5325909707c4260e94f160"
+      sha256 "2d1e520a1aec2b4c25687ec3f20d58876aa511f26aaf2c00255154dd0722615a"
 
       def install
         bin.install "automock"
@@ -19,7 +19,7 @@ class Automock < Formula
     end
     on_arm do
       url "https://github.com/hemantobora/auto-mock/releases/download/v1.0.3/automock_1.0.3_darwin_arm64.tar.gz"
-      sha256 "bc4866841001e448292b618c23c292aaec230b5142b520dc4f69f90564d9d1d1"
+      sha256 "b1baaa0e64a84ebc353e33d0afa324a9c9ee7f9545e5334e789ee70baca84c24"
 
       def install
         bin.install "automock"
@@ -31,7 +31,7 @@ class Automock < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/hemantobora/auto-mock/releases/download/v1.0.3/automock_1.0.3_linux_amd64.tar.gz"
-        sha256 "a64ad24c7c251104b47d715ef7271ef2995776430f19cd7e145d0dc5e36968a4"
+        sha256 "2350585342bcf32c33233e549c3ba9d888020e148f56945312ab1d184baa41c6"
 
         def install
           bin.install "automock"
@@ -41,7 +41,7 @@ class Automock < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/hemantobora/auto-mock/releases/download/v1.0.3/automock_1.0.3_linux_arm64.tar.gz"
-        sha256 "b3e1d53b6126b991db1bee7994e514229575c9b2a30894a8a650d2c8a384d989"
+        sha256 "413107e0f26886d02c7f9d121b50c4479d90d0095d8f0f8f32506b814f65d27c"
 
         def install
           bin.install "automock"
