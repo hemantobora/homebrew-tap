@@ -5,21 +5,21 @@
 class Automock < Formula
   desc "AutoMock CLI – generate & deploy MockServer infra"
   homepage "https://github.com/hemantobora/auto-mock"
-  version "2.0.2"
+  version "2.0.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/hemantobora/auto-mock/releases/download/v2.0.2/automock_2.0.2_darwin_amd64.tar.gz"
-      sha256 "23a4d86aedea6920fe23030b13eca929f1895313efa916451d5addec781d3cb6"
+      url "https://github.com/hemantobora/auto-mock/releases/download/v2.0.3/automock_2.0.3_darwin_amd64.tar.gz"
+      sha256 "3a958b9781a9e7793a6d5ae9f7bf9f3f54a1a50906690c8356008deca7c25f08"
 
       def install
         bin.install "automock"
       end
     end
     on_arm do
-      url "https://github.com/hemantobora/auto-mock/releases/download/v2.0.2/automock_2.0.2_darwin_arm64.tar.gz"
-      sha256 "60480265a0eb61926888ba4d35f6c78ad6d84c796ff13f87050fbd6a95c5a46d"
+      url "https://github.com/hemantobora/auto-mock/releases/download/v2.0.3/automock_2.0.3_darwin_arm64.tar.gz"
+      sha256 "5ca97fe2b4ce4c2e6608959b6180bd5e938fd5ff2e4ee0e0869b1e4351b8fc0c"
 
       def install
         bin.install "automock"
@@ -30,8 +30,8 @@ class Automock < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hemantobora/auto-mock/releases/download/v2.0.2/automock_2.0.2_linux_amd64.tar.gz"
-        sha256 "ed602260130d119961b8961ca858e52c8dc8ab3232a2ecdafa63afe420f6f3c6"
+        url "https://github.com/hemantobora/auto-mock/releases/download/v2.0.3/automock_2.0.3_linux_amd64.tar.gz"
+        sha256 "9507f7cd16e5b7dc96f06905fd7093b0f2758189e378a82f0342ddf3993ba233"
 
         def install
           bin.install "automock"
@@ -40,8 +40,8 @@ class Automock < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hemantobora/auto-mock/releases/download/v2.0.2/automock_2.0.2_linux_arm64.tar.gz"
-        sha256 "5d2e48c5d8aa8576c4a7dbcb3b0e314f4df9762b22cfdba66aa6ced485c9a0c6"
+        url "https://github.com/hemantobora/auto-mock/releases/download/v2.0.3/automock_2.0.3_linux_arm64.tar.gz"
+        sha256 "a13ae3c9815ba8afecd6cb2921b130c59a5b31262da9fc217a89b6d1aea7fe0b"
 
         def install
           bin.install "automock"
