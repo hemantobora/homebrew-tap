@@ -36,6 +36,31 @@ brew upgrade
 
 ## Available Formulae
 
+### api-probe
+
+Python-based CLI to configure AI skills for api-probe in any project. Installs slash commands for GitHub Copilot and Claude Code that generate and sync YAML probe files for API validation in CI/CD pipelines.
+
+Key features:
+- Scans your codebase to auto-detect API endpoints, auth patterns, and dependencies
+- Interactive workflow — asks targeted questions before generating
+- Supports REST, GraphQL, Postman, Bruno, Insomnia, OpenAPI, HAR
+
+**Install:**
+```bash
+brew install hemantobora/tap/api-probe
+```
+
+**Usage:**
+```bash
+cd your-project
+api-probe init
+```
+
+**Project:** [hemantobora/api-probe](https://github.com/hemantobora/api-probe)
+**License:** [MIT](https://github.com/hemantobora/api-probe/blob/main/LICENSE)
+
+---
+
 ### AutoMock
 
 Go-based CLI to generate, deploy, and manage mock-server infrastructures (MockServer) in the cloud.
@@ -82,8 +107,9 @@ All formulae should:
 
 ## Related Links
 
-- GitHub Profile: [Hemanto Bora](https://github.com/hemantobora)  
-- AutoMock Repository: [hemantobora/auto-mock](https://github.com/hemantobora/auto-mock)  
+- GitHub Profile: [Hemanto Bora](https://github.com/hemantobora)
+- api-probe Repository: [hemantobora/api-probe](https://github.com/hemantobora/api-probe)
+- AutoMock Repository: [hemantobora/auto-mock](https://github.com/hemantobora/auto-mock)
 - GoReleaser Documentation: [https://goreleaser.com](https://goreleaser.com)
 
 ---
