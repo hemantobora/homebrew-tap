@@ -1,11 +1,11 @@
 class ApiProbe < Formula
   desc "Configure AI skills for api-probe in your project"
   homepage "https://github.com/hemantobora/api-probe"
-  version "0.0.1"
+  version "0.0.3"
   license "MIT"
 
-  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "1f674a1dc9386e1227f3cab28ecabcdeddeb9b96e9f4c5b8341a1226fe2b50cf"
+  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.0.3.tar.gz"
+  sha256 "91411507fa8613c0ac64ab0b451f73526d74ea7b9b413793c94b2d07907322de"
 
   depends_on "python3"
 
@@ -14,13 +14,24 @@ class ApiProbe < Formula
 
     (bin/"api-probe").write <<~SH
       #!/bin/sh
-      if [ "$1" = "init" ]; then
-        exec python3 "#{libexec}/skills/install.py"
-      else
-        echo "Usage: api-probe init"
-        echo "  Configures AI skills (GitHub Copilot, Claude Code) for api-probe in your project."
-        exit 1
-      fi
+      case "$1" in
+        init)
+          exec python3 "#{libexec}/skills/install.py"
+          ;;
+        -v|--version)
+          echo "api-probe #{version}"
+          ;;
+        *)
+          echo "Usage: api-probe <command>"
+          echo ""
+          echo "Commands:"
+          echo "  init        Configure AI skills for this project"
+          echo ""
+          echo "Options:"
+          echo "  -v, --version   Print version"
+          exit 1
+          ;;
+      esac
     SH
   end
 
