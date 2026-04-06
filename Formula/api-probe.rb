@@ -4,8 +4,8 @@ class ApiProbe < Formula
   version "0.0.1"
   license "MIT"
 
-  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "bc65e942d417c081472d4be681f5c4072ccc1bc3640c1af6daa37568241ec686"
+  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "5f83d30dcad35949c2c3c95d6e1a6950cb5b2710280b0b8a92d738dcfb2bbdac"
 
   depends_on "python3"
 
