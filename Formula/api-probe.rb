@@ -5,7 +5,7 @@ class ApiProbe < Formula
   license "MIT"
 
   url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "5d6244cda652f007a6eaa7cd425ec5a40d68f4428c70f563e0901d28e2dce0ed"
+  sha256 "083dc9e00c9bb8537abddfdc92fc2e59189a88426edd3b9678db8c7d8eb27a30"
 
   depends_on "python3"
 
