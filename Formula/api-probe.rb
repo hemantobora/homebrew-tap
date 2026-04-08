@@ -1,11 +1,11 @@
 class ApiProbe < Formula
   desc "Configure AI skills for api-probe in your project"
   homepage "https://github.com/hemantobora/api-probe"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
-  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.0.5.tar.gz"
-  sha256 "b67d9cfb7f98353236c78fb6e3c84693cfbb000ee8f67da84b394e4ce0683624"
+  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.0.6.tar.gz"
+  sha256 "ecd13f600c4d9927bc343d06aacf1f9a086255fd6661ff7f840d510943b8cdf0"
 
   depends_on "python3"
 
@@ -16,7 +16,10 @@ class ApiProbe < Formula
       #!/bin/sh
       case "$1" in
         init)
-          exec python3 "#{libexec}/skills/install.py"
+          exec python3 "#{libexec}/skills/install.py" init
+          ;;
+        destroy)
+          exec python3 "#{libexec}/skills/install.py" destroy
           ;;
         -v|--version)
           echo "api-probe #{version}"
@@ -25,7 +28,8 @@ class ApiProbe < Formula
           echo "Usage: api-probe <command>"
           echo ""
           echo "Commands:"
-          echo "  init        Configure AI skills for this project"
+          echo "  init        Install AI skills for this project"
+          echo "  destroy     Remove AI skills installed by init"
           echo ""
           echo "Options:"
           echo "  -v, --version   Print version"
