@@ -1,11 +1,11 @@
 class ApiProbe < Formula
   desc "Configure AI skills for api-probe in your project"
   homepage "https://github.com/hemantobora/api-probe"
-  version "0.0.6"
+  version "0.0.2"
   license "MIT"
 
-  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.0.6.tar.gz"
-  sha256 "ecd13f600c4d9927bc343d06aacf1f9a086255fd6661ff7f840d510943b8cdf0"
+  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "81edc4512656c0b1109587402ece1ecdee897c230af1f4f0135f3c8f2b8d78e6"
 
   depends_on "python3"
 
