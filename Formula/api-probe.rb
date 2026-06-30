@@ -1,11 +1,11 @@
 class ApiProbe < Formula
   desc "Configure AI skills for api-probe in your project"
   homepage "https://github.com/hemantobora/api-probe"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
-  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "3eb3c9d10881e5c173eb5eade1251d2ffa931f4da95e9b82a25427464044c98d"
+  url "https://github.com/hemantobora/api-probe/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "8314fbc697f4f83efb5e445886c312bda72f20e72353b2bc67ee7b893443707d"
 
   depends_on "python3"
 
@@ -18,6 +18,9 @@ class ApiProbe < Formula
         init)
           exec python3 "#{libexec}/skills/install.py" init
           ;;
+        update)
+          exec python3 "#{libexec}/skills/install.py" update
+          ;;
         destroy)
           exec python3 "#{libexec}/skills/install.py" destroy
           ;;
@@ -29,6 +32,7 @@ class ApiProbe < Formula
           echo ""
           echo "Commands:"
           echo "  init        Install AI skills for this project"
+          echo "  update      Re-sync installed skills with this version"
           echo "  destroy     Remove AI skills installed by init"
           echo ""
           echo "Options:"
